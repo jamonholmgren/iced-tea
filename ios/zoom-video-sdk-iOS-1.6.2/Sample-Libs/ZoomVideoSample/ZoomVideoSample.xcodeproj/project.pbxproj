@@ -1,0 +1,1142 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91300C952431EECB00C25F5C /* CameraCaptureAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91300C922431EECB00C25F5C /* CameraCaptureAdapter.m */; };
+		91300C982431EF2400C25F5C /* SendPictureAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91300C972431EF2400C25F5C /* SendPictureAdapter.m */; };
+		9158BAC022B7AFE8000B38E3 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAB422B7AFE8000B38E3 /* OpenGLViewController.m */; };
+		9158BAC722B7CA4A000B38E3 /* OpenglView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAC622B7CA4A000B38E3 /* OpenglView.m */; };
+		9158BAF822B8D07B000B38E3 /* TopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAE722B8D07B000B38E3 /* TopBarView.m */; };
+		9158BAF922B8D07B000B38E3 /* ChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAE922B8D07B000B38E3 /* ChatInputView.m */; };
+		9158BAFA22B8D07B000B38E3 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAEC22B8D07B000B38E3 /* ChatCell.m */; };
+		9158BAFB22B8D07B000B38E3 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAEE22B8D07B000B38E3 /* ChatView.m */; };
+		9158BAFC22B8D07B000B38E3 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAF122B8D07B000B38E3 /* CanvasViewController.m */; };
+		9158BAFD22B8D07B000B38E3 /* ControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAF222B8D07B000B38E3 /* ControlBar.m */; };
+		9158BAFE22B8D07B000B38E3 /* HorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAF422B8D07B000B38E3 /* HorizontalTableView.m */; };
+		9158BAFF22B8D07B000B38E3 /* BottomBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BAF622B8D07B000B38E3 /* BottomBarView.m */; };
+		9158BB0322B8D0A9000B38E3 /* MetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BB0122B8D0A9000B38E3 /* MetalViewController.m */; };
+		9158BB0C22B8F7CB000B38E3 /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158BB0722B8F7CB000B38E3 /* MetalView.m */; };
+		9158BB0D22B8F7CB000B38E3 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9158BB0922B8F7CB000B38E3 /* shaders.metal */; };
+		917A235F24C04A73009357BB /* SwitchBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A235E24C04A73009357BB /* SwitchBtn.m */; };
+		918C52C92390ECEC00C35885 /* NSObject+ErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 918C52C82390ECEC00C35885 /* NSObject+ErrorMessage.m */; };
+		9191B280277EE2A800303299 /* LowerThirdSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191B27F277EE2A800303299 /* LowerThirdSettingViewController.m */; };
+		919A07C822A7C3CA0064488C /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 919A07C222A7C3CA0064488C /* KGModal.m */; };
+		919A07C922A7C3CA0064488C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 919A07C522A7C3CA0064488C /* MBProgressHUD.m */; };
+		91BFEAB8243C6C10002E320B /* waterMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BFEAB7243C6C10002E320B /* waterMark.png */; };
+		91CAF1EB278ED18E009755F3 /* LowerThirdPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CAF1EA278ED18D009755F3 /* LowerThirdPanel.m */; };
+		91F6B5B52784316200B3C7FF /* SimulateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6B5B42784316200B3C7FF /* SimulateStorage.m */; };
+		D0066710243F050C005FF36C /* frame_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D006670E243F050C005FF36C /* frame_two.jpg */; };
+		D0066711243F050C005FF36C /* frame_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D006670F243F050C005FF36C /* frame_one.jpg */; };
+		D0184EFF24FF3EAC008B9736 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0184EFE24FF3EAC008B9736 /* CoreGraphics.framework */; };
+		D0184F0124FF3EB2008B9736 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0184F0024FF3EB2008B9736 /* CoreVideo.framework */; };
+		D0184F0324FF3EB8008B9736 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0184F0224FF3EB8008B9736 /* CoreMedia.framework */; };
+		D0184F0524FF3EBE008B9736 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0184F0424FF3EBE008B9736 /* VideoToolbox.framework */; };
+		D02C08CC23681CC000DC531D /* RendererSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02C08CB23681CC000DC531D /* RendererSelectView.m */; };
+		D02C08D223681E3200DC531D /* RendererSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D02C08D123681E3200DC531D /* RendererSelectTableViewCell.m */; };
+		D02FEFAF22A798D600D41995 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02FEFAE22A798D600D41995 /* CreateViewController.m */; };
+		D03AD1BC2361B1D600B9DA8C /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1B32361B1D600B9DA8C /* LGSideMenuHelper.m */; };
+		D03AD1BD2361B1D600B9DA8C /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1B52361B1D600B9DA8C /* LGSideMenuView.m */; };
+		D03AD1BE2361B1D600B9DA8C /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1B62361B1D600B9DA8C /* LGSideMenuSegue.m */; };
+		D03AD1BF2361B1D600B9DA8C /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1B72361B1D600B9DA8C /* LGSideMenuController.m */; };
+		D03AD1C02361B1D600B9DA8C /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1B82361B1D600B9DA8C /* LGSideMenuGesturesHandler.m */; };
+		D03AD1C12361B1D600B9DA8C /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1B92361B1D600B9DA8C /* UIViewController+LGSideMenuController.m */; };
+		D03AD1C22361B1D600B9DA8C /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1BB2361B1D600B9DA8C /* LGSideMenuBorderView.m */; };
+		D03AD1C52361B44900B9DA8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1C42361B44900B9DA8C /* MainViewController.m */; };
+		D03AD1C82361B51200B9DA8C /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1C72361B51200B9DA8C /* LeftViewController.m */; };
+		D03AD1CB2361B98600B9DA8C /* LeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D03AD1CA2361B98600B9DA8C /* LeftViewCell.m */; };
+		D051F68A2297E19E00C2F214 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D051F6892297E19E00C2F214 /* AppDelegate.m */; };
+		D051F6922297E1A000C2F214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D051F6912297E1A000C2F214 /* Assets.xcassets */; };
+		D051F6952297E1A000C2F214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D051F6932297E1A000C2F214 /* LaunchScreen.storyboard */; };
+		D051F6982297E1A000C2F214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D051F6972297E1A000C2F214 /* main.m */; };
+		D0A08F7323868E4000640B12 /* ZoomVideoSDKScreenShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0C8CA7D22AFAEF7002A863D /* ZoomVideoSDKScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0A578AE2366946300F6AA8E /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A578AD2366946300F6AA8E /* SettingTableViewCell.m */; };
+		D0BDAFBB22B2219100950CE8 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BDAFBA22B2219100950CE8 /* BaseNavigationController.m */; };
+		D0C8CA7F22AFAEF7002A863D /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C8CA7E22AFAEF7002A863D /* ReplayKit.framework */; };
+		D0C8CA8322AFAEF7002A863D /* SampleHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0C8CA8222AFAEF7002A863D /* SampleHandler.mm */; };
+		D0D175E02636B3310055C9B1 /* SampleCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D175DC2636B3310055C9B1 /* SampleCheckbox.m */; };
+		D0D549B624C02720009CF9BC /* SendYUVAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D549B324C02720009CF9BC /* SendYUVAdapter.m */; };
+		D0E31D76236038BE002CF0B4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E31D75236038BE002CF0B4 /* IntroViewController.m */; };
+		D0FEB8A6241111D20022FB4B /* PreProcessHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FEB8A3241111D20022FB4B /* PreProcessHelper.m */; };
+		D0FF1405261FF568005600FC /* ZoomVideoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1404261FF568005600FC /* ZoomVideoSDK.xcframework */; };
+		D0FF1406261FF568005600FC /* ZoomVideoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1404261FF568005600FC /* ZoomVideoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0FF1424261FF595005600FC /* ZoomVideoSDKScreenShare.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1423261FF595005600FC /* ZoomVideoSDKScreenShare.xcframework */; };
+		F09CE7F32952DFDC00C88860 /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09CE7F22952DFDC00C88860 /* VBViewController.m */; };
+		F0B4387D2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B4386B2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.m */; };
+		F0B4387E2787D8B8005CE417 /* FeedbackSurveyResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B4386C2787D8B8005CE417 /* FeedbackSurveyResultViewController.m */; };
+		F0B4387F2787D8B8005CE417 /* FeedbackPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B4386D2787D8B8005CE417 /* FeedbackPopViewController.m */; };
+		F0B438802787D8B8005CE417 /* MoreMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B438772787D8B8005CE417 /* MoreMenuViewController.m */; };
+		F0B438812787D8B8005CE417 /* MoreMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B438782787D8B8005CE417 /* MoreMenuHelper.m */; };
+		F0B438822787D8B8005CE417 /* MoreMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B438792787D8B8005CE417 /* MoreMenuItemCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0946DD02611C75F00DB5F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0438A7B2313DF16002D7AB7 /* ZoomVideoSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9CF9C6021B64DB600DDF8CC;
+			remoteInfo = ZoomVideoSDK;
+		};
+		D0946DD22611C75F00DB5F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0438A7B2313DF16002D7AB7 /* ZoomVideoSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0341235229400B30084C9CE;
+			remoteInfo = ZoomVideoSDKScreenShare;
+		};
+		D0A08F7423868E4000640B12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D051F67D2297E19E00C2F214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C8CA7C22AFAEF7002A863D;
+			remoteInfo = ZoomVideoSDKScreenShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0A08F7623868E4100640B12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0A08F7323868E4000640B12 /* ZoomVideoSDKScreenShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FF1407261FF568005600FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0FF1406261FF568005600FC /* ZoomVideoSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		91300C922431EECB00C25F5C /* CameraCaptureAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCaptureAdapter.m; sourceTree = "<group>"; };
+		91300C932431EECB00C25F5C /* CameraCaptureAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureAdapter.h; sourceTree = "<group>"; };
+		91300C962431EF2400C25F5C /* SendPictureAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendPictureAdapter.h; sourceTree = "<group>"; };
+		91300C972431EF2400C25F5C /* SendPictureAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendPictureAdapter.m; sourceTree = "<group>"; };
+		9158BAA922B7AFE8000B38E3 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
+		9158BAB422B7AFE8000B38E3 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
+		9158BAC522B7CA4A000B38E3 /* OpenglView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenglView.h; sourceTree = "<group>"; };
+		9158BAC622B7CA4A000B38E3 /* OpenglView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenglView.m; sourceTree = "<group>"; };
+		9158BAE622B8D07B000B38E3 /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		9158BAE722B8D07B000B38E3 /* TopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBarView.m; sourceTree = "<group>"; };
+		9158BAE922B8D07B000B38E3 /* ChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatInputView.m; sourceTree = "<group>"; };
+		9158BAEA22B8D07B000B38E3 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		9158BAEB22B8D07B000B38E3 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
+		9158BAEC22B8D07B000B38E3 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		9158BAED22B8D07B000B38E3 /* ChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatInputView.h; sourceTree = "<group>"; };
+		9158BAEE22B8D07B000B38E3 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
+		9158BAEF22B8D07B000B38E3 /* ControlBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlBar.h; sourceTree = "<group>"; };
+		9158BAF022B8D07B000B38E3 /* TopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarView.h; sourceTree = "<group>"; };
+		9158BAF122B8D07B000B38E3 /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		9158BAF222B8D07B000B38E3 /* ControlBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlBar.m; sourceTree = "<group>"; };
+		9158BAF422B8D07B000B38E3 /* HorizontalTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableView.m; sourceTree = "<group>"; };
+		9158BAF522B8D07B000B38E3 /* BottomBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomBarView.h; sourceTree = "<group>"; };
+		9158BAF622B8D07B000B38E3 /* BottomBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomBarView.m; sourceTree = "<group>"; };
+		9158BAF722B8D07B000B38E3 /* HorizontalTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableView.h; sourceTree = "<group>"; };
+		9158BB0122B8D0A9000B38E3 /* MetalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalViewController.m; sourceTree = "<group>"; };
+		9158BB0222B8D0A9000B38E3 /* MetalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalViewController.h; sourceTree = "<group>"; };
+		9158BB0722B8F7CB000B38E3 /* MetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
+		9158BB0822B8F7CB000B38E3 /* LYShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYShaderTypes.h; sourceTree = "<group>"; };
+		9158BB0922B8F7CB000B38E3 /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		9158BB0A22B8F7CB000B38E3 /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
+		917A235D24C04A73009357BB /* SwitchBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchBtn.h; sourceTree = "<group>"; };
+		917A235E24C04A73009357BB /* SwitchBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchBtn.m; sourceTree = "<group>"; };
+		918C52C72390ECEC00C35885 /* NSObject+ErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ErrorMessage.h"; sourceTree = "<group>"; };
+		918C52C82390ECEC00C35885 /* NSObject+ErrorMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ErrorMessage.m"; sourceTree = "<group>"; };
+		9191B27E277EE2A800303299 /* LowerThirdSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowerThirdSettingViewController.h; sourceTree = "<group>"; };
+		9191B27F277EE2A800303299 /* LowerThirdSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LowerThirdSettingViewController.m; sourceTree = "<group>"; };
+		919A07C222A7C3CA0064488C /* KGModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModal.m; sourceTree = "<group>"; };
+		919A07C322A7C3CA0064488C /* KGModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGModal.h; sourceTree = "<group>"; };
+		919A07C522A7C3CA0064488C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		919A07C622A7C3CA0064488C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		91BFEAB7243C6C10002E320B /* waterMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterMark.png; sourceTree = "<group>"; };
+		91CAF1E9278ED18D009755F3 /* LowerThirdPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowerThirdPanel.h; sourceTree = "<group>"; };
+		91CAF1EA278ED18D009755F3 /* LowerThirdPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowerThirdPanel.m; sourceTree = "<group>"; };
+		91F37A6E22AE05190049F22B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		91F6B5B32784316200B3C7FF /* SimulateStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulateStorage.h; sourceTree = "<group>"; };
+		91F6B5B42784316200B3C7FF /* SimulateStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulateStorage.m; sourceTree = "<group>"; };
+		D006670E243F050C005FF36C /* frame_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame_two.jpg; sourceTree = "<group>"; };
+		D006670F243F050C005FF36C /* frame_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame_one.jpg; sourceTree = "<group>"; };
+		D0184EFE24FF3EAC008B9736 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0184F0024FF3EB2008B9736 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D0184F0224FF3EB8008B9736 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D0184F0424FF3EBE008B9736 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		D02C08CA23681CC000DC531D /* RendererSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererSelectView.h; sourceTree = "<group>"; };
+		D02C08CB23681CC000DC531D /* RendererSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RendererSelectView.m; sourceTree = "<group>"; };
+		D02C08D023681E3200DC531D /* RendererSelectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererSelectTableViewCell.h; sourceTree = "<group>"; };
+		D02C08D123681E3200DC531D /* RendererSelectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RendererSelectTableViewCell.m; sourceTree = "<group>"; };
+		D02FEFAD22A798D600D41995 /* CreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		D02FEFAE22A798D600D41995 /* CreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		D03AD1AE2361B1D600B9DA8C /* LGSideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuSegue.h; sourceTree = "<group>"; };
+		D03AD1AF2361B1D600B9DA8C /* LGSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuView.h; sourceTree = "<group>"; };
+		D03AD1B02361B1D600B9DA8C /* LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuController.h; sourceTree = "<group>"; };
+		D03AD1B12361B1D600B9DA8C /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
+		D03AD1B22361B1D600B9DA8C /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuBorderView.h; sourceTree = "<group>"; };
+		D03AD1B32361B1D600B9DA8C /* LGSideMenuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuHelper.m; sourceTree = "<group>"; };
+		D03AD1B42361B1D600B9DA8C /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
+		D03AD1B52361B1D600B9DA8C /* LGSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuView.m; sourceTree = "<group>"; };
+		D03AD1B62361B1D600B9DA8C /* LGSideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuSegue.m; sourceTree = "<group>"; };
+		D03AD1B72361B1D600B9DA8C /* LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuController.m; sourceTree = "<group>"; };
+		D03AD1B82361B1D600B9DA8C /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
+		D03AD1B92361B1D600B9DA8C /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
+		D03AD1BA2361B1D600B9DA8C /* LGSideMenuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuHelper.h; sourceTree = "<group>"; };
+		D03AD1BB2361B1D600B9DA8C /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuBorderView.m; sourceTree = "<group>"; };
+		D03AD1C32361B44900B9DA8C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D03AD1C42361B44900B9DA8C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D03AD1C62361B51200B9DA8C /* LeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		D03AD1C72361B51200B9DA8C /* LeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		D03AD1C92361B98600B9DA8C /* LeftViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftViewCell.h; sourceTree = "<group>"; };
+		D03AD1CA2361B98600B9DA8C /* LeftViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftViewCell.m; sourceTree = "<group>"; };
+		D0438A182313DA0C002D7AB7 /* ZoomVideoSDKScreenShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomVideoSDKScreenShare.framework; path = ../lib/ZoomVideoSDKScreenShare.framework; sourceTree = "<group>"; };
+		D0438A7B2313DF16002D7AB7 /* ZoomVideoSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZoomVideoSDK.xcodeproj; path = ../ZoomVideoSDK/ZoomVideoSDK.xcodeproj; sourceTree = "<group>"; };
+		D051F6852297E19E00C2F214 /* ZoomVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D051F6882297E19E00C2F214 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D051F6892297E19E00C2F214 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D051F6912297E1A000C2F214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D051F6942297E1A000C2F214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D051F6962297E1A000C2F214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D051F6972297E1A000C2F214 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0A578AC2366946300F6AA8E /* SettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		D0A578AD2366946300F6AA8E /* SettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		D0BDAFB922B2219100950CE8 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		D0BDAFBA22B2219100950CE8 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		D0C4FAA5229BC5490036EC58 /* ZoomVideoSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZoomVideoSample-Prefix.pch"; sourceTree = "<group>"; };
+		D0C8CA7822AFAEA9002A863D /* ZoomVideoSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomVideoSample.entitlements; sourceTree = "<group>"; };
+		D0C8CA7D22AFAEF7002A863D /* ZoomVideoSDKScreenShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZoomVideoSDKScreenShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C8CA7E22AFAEF7002A863D /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		D0C8CA8122AFAEF7002A863D /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		D0C8CA8222AFAEF7002A863D /* SampleHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SampleHandler.mm; sourceTree = "<group>"; };
+		D0C8CA8422AFAEF7002A863D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C8CA8E22AFB06A002A863D /* ZoomVideoSDKScreenShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomVideoSDKScreenShare.entitlements; sourceTree = "<group>"; };
+		D0CB9F0D2330832200AEC559 /* ZoomVideoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomVideoSDK.framework; path = ../lib/ZoomVideoSDK.framework; sourceTree = "<group>"; };
+		D0D175DC2636B3310055C9B1 /* SampleCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleCheckbox.m; sourceTree = "<group>"; };
+		D0D175DD2636B3310055C9B1 /* SampleCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCheckbox.h; sourceTree = "<group>"; };
+		D0D549B024C02720009CF9BC /* SendYUVAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendYUVAdapter.h; sourceTree = "<group>"; };
+		D0D549B324C02720009CF9BC /* SendYUVAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendYUVAdapter.m; sourceTree = "<group>"; };
+		D0E31D74236038BE002CF0B4 /* IntroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		D0E31D75236038BE002CF0B4 /* IntroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		D0FEB8A2241111D20022FB4B /* PreProcessHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreProcessHelper.h; sourceTree = "<group>"; };
+		D0FEB8A3241111D20022FB4B /* PreProcessHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreProcessHelper.m; sourceTree = "<group>"; };
+		D0FF1404261FF568005600FC /* ZoomVideoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDK.xcframework; path = ../lib/ZoomVideoSDK.xcframework; sourceTree = "<group>"; };
+		D0FF1423261FF595005600FC /* ZoomVideoSDKScreenShare.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDKScreenShare.xcframework; path = ../lib/ZoomVideoSDKScreenShare.xcframework; sourceTree = "<group>"; };
+		F09CE7F12952DFDC00C88860 /* VBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
+		F09CE7F22952DFDC00C88860 /* VBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
+		F0B4386B2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackSurveyResultTableViewCell.m; sourceTree = "<group>"; };
+		F0B4386C2787D8B8005CE417 /* FeedbackSurveyResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackSurveyResultViewController.m; sourceTree = "<group>"; };
+		F0B4386D2787D8B8005CE417 /* FeedbackPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackPopViewController.m; sourceTree = "<group>"; };
+		F0B4386E2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackSurveyResultTableViewCell.h; sourceTree = "<group>"; };
+		F0B4386F2787D8B8005CE417 /* FeedbackSurveyResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackSurveyResultViewController.h; sourceTree = "<group>"; };
+		F0B438702787D8B8005CE417 /* FeedbackPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackPopViewController.h; sourceTree = "<group>"; };
+		F0B438742787D8B8005CE417 /* MoreMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreMenuViewController.h; sourceTree = "<group>"; };
+		F0B438752787D8B8005CE417 /* MoreMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreMenuItemCell.h; sourceTree = "<group>"; };
+		F0B438762787D8B8005CE417 /* MoreMenuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreMenuHelper.h; sourceTree = "<group>"; };
+		F0B438772787D8B8005CE417 /* MoreMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreMenuViewController.m; sourceTree = "<group>"; };
+		F0B438782787D8B8005CE417 /* MoreMenuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreMenuHelper.m; sourceTree = "<group>"; };
+		F0B438792787D8B8005CE417 /* MoreMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreMenuItemCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D051F6822297E19E00C2F214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FF1405261FF568005600FC /* ZoomVideoSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C8CA7A22AFAEF7002A863D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0184F0524FF3EBE008B9736 /* VideoToolbox.framework in Frameworks */,
+				D0184F0324FF3EB8008B9736 /* CoreMedia.framework in Frameworks */,
+				D0184F0124FF3EB2008B9736 /* CoreVideo.framework in Frameworks */,
+				D0FF1424261FF595005600FC /* ZoomVideoSDKScreenShare.xcframework in Frameworks */,
+				D0184EFF24FF3EAC008B9736 /* CoreGraphics.framework in Frameworks */,
+				D0C8CA7F22AFAEF7002A863D /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91300C902431EECB00C25F5C /* ExternalVideoSource */ = {
+			isa = PBXGroup;
+			children = (
+				D0D549AD24C026FF009CF9BC /* SendYUV */,
+				91300C912431EECB00C25F5C /* CameraCapture */,
+				91300C942431EECB00C25F5C /* SendPicture */,
+			);
+			name = ExternalVideoSource;
+			path = ZoomVideoSample/ExternalVideoSource;
+			sourceTree = SOURCE_ROOT;
+		};
+		91300C912431EECB00C25F5C /* CameraCapture */ = {
+			isa = PBXGroup;
+			children = (
+				91300C932431EECB00C25F5C /* CameraCaptureAdapter.h */,
+				91300C922431EECB00C25F5C /* CameraCaptureAdapter.m */,
+			);
+			path = CameraCapture;
+			sourceTree = "<group>";
+		};
+		91300C942431EECB00C25F5C /* SendPicture */ = {
+			isa = PBXGroup;
+			children = (
+				D006670F243F050C005FF36C /* frame_one.jpg */,
+				D006670E243F050C005FF36C /* frame_two.jpg */,
+				91300C962431EF2400C25F5C /* SendPictureAdapter.h */,
+				91300C972431EF2400C25F5C /* SendPictureAdapter.m */,
+			);
+			path = SendPicture;
+			sourceTree = "<group>";
+		};
+		9158BAA822B7AFE8000B38E3 /* OpenGLRender */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAC422B7CA4A000B38E3 /* openGL */,
+				9158BAA922B7AFE8000B38E3 /* OpenGLViewController.h */,
+				9158BAB422B7AFE8000B38E3 /* OpenGLViewController.m */,
+			);
+			path = OpenGLRender;
+			sourceTree = "<group>";
+		};
+		9158BAC422B7CA4A000B38E3 /* openGL */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAC522B7CA4A000B38E3 /* OpenglView.h */,
+				9158BAC622B7CA4A000B38E3 /* OpenglView.m */,
+			);
+			path = openGL;
+			sourceTree = "<group>";
+		};
+		9158BAE522B8D07B000B38E3 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAE622B8D07B000B38E3 /* CanvasViewController.h */,
+				9158BAF122B8D07B000B38E3 /* CanvasViewController.m */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		9158BAE822B8D07B000B38E3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAEA22B8D07B000B38E3 /* ChatCell.h */,
+				9158BAEC22B8D07B000B38E3 /* ChatCell.m */,
+				9158BAED22B8D07B000B38E3 /* ChatInputView.h */,
+				9158BAE922B8D07B000B38E3 /* ChatInputView.m */,
+				9158BAEB22B8D07B000B38E3 /* ChatView.h */,
+				9158BAEE22B8D07B000B38E3 /* ChatView.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		9158BAF322B8D07B000B38E3 /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAF722B8D07B000B38E3 /* HorizontalTableView.h */,
+				9158BAF422B8D07B000B38E3 /* HorizontalTableView.m */,
+				9158BAF522B8D07B000B38E3 /* BottomBarView.h */,
+				9158BAF622B8D07B000B38E3 /* BottomBarView.m */,
+			);
+			path = BottomBar;
+			sourceTree = "<group>";
+		};
+		9158BB0022B8D08D000B38E3 /* MetalRender */ = {
+			isa = PBXGroup;
+			children = (
+				9158BB0622B8F7CB000B38E3 /* Metal */,
+				9158BB0222B8D0A9000B38E3 /* MetalViewController.h */,
+				9158BB0122B8D0A9000B38E3 /* MetalViewController.m */,
+			);
+			path = MetalRender;
+			sourceTree = "<group>";
+		};
+		9158BB0622B8F7CB000B38E3 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				9158BB0822B8F7CB000B38E3 /* LYShaderTypes.h */,
+				9158BB0A22B8F7CB000B38E3 /* MetalView.h */,
+				9158BB0722B8F7CB000B38E3 /* MetalView.m */,
+				9158BB0922B8F7CB000B38E3 /* shaders.metal */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		917A235724C049AC009357BB /* SwitchBtn */ = {
+			isa = PBXGroup;
+			children = (
+				917A235D24C04A73009357BB /* SwitchBtn.h */,
+				917A235E24C04A73009357BB /* SwitchBtn.m */,
+			);
+			path = SwitchBtn;
+			sourceTree = "<group>";
+		};
+		9191B27D277EE20E00303299 /* LowerThird */ = {
+			isa = PBXGroup;
+			children = (
+				91CAF1E9278ED18D009755F3 /* LowerThirdPanel.h */,
+				91CAF1EA278ED18D009755F3 /* LowerThirdPanel.m */,
+				9191B27E277EE2A800303299 /* LowerThirdSettingViewController.h */,
+				9191B27F277EE2A800303299 /* LowerThirdSettingViewController.m */,
+			);
+			path = LowerThird;
+			sourceTree = "<group>";
+		};
+		919A07C022A7C3CA0064488C /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				D03AD1AD2361B1D600B9DA8C /* LGSideMenuController */,
+				919A07C122A7C3CA0064488C /* KGModal */,
+				919A07C422A7C3CA0064488C /* MBProgressHUD */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		919A07C122A7C3CA0064488C /* KGModal */ = {
+			isa = PBXGroup;
+			children = (
+				919A07C322A7C3CA0064488C /* KGModal.h */,
+				919A07C222A7C3CA0064488C /* KGModal.m */,
+			);
+			path = KGModal;
+			sourceTree = "<group>";
+		};
+		919A07C422A7C3CA0064488C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				919A07C622A7C3CA0064488C /* MBProgressHUD.h */,
+				919A07C522A7C3CA0064488C /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		91E531D2229D13D2000D2344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0FF1423261FF595005600FC /* ZoomVideoSDKScreenShare.xcframework */,
+				D0FF1404261FF568005600FC /* ZoomVideoSDK.xcframework */,
+				D0184F0424FF3EBE008B9736 /* VideoToolbox.framework */,
+				D0184F0224FF3EB8008B9736 /* CoreMedia.framework */,
+				D0184F0024FF3EB2008B9736 /* CoreVideo.framework */,
+				D0184EFE24FF3EAC008B9736 /* CoreGraphics.framework */,
+				D0CB9F0D2330832200AEC559 /* ZoomVideoSDK.framework */,
+				D0438A182313DA0C002D7AB7 /* ZoomVideoSDKScreenShare.framework */,
+				91F37A6E22AE05190049F22B /* AssetsLibrary.framework */,
+				D0C8CA7E22AFAEF7002A863D /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91F6B5B22784313C00B3C7FF /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				91F6B5B32784316200B3C7FF /* SimulateStorage.h */,
+				91F6B5B42784316200B3C7FF /* SimulateStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		D03AD1AD2361B1D600B9DA8C /* LGSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				D03AD1AE2361B1D600B9DA8C /* LGSideMenuSegue.h */,
+				D03AD1AF2361B1D600B9DA8C /* LGSideMenuView.h */,
+				D03AD1B02361B1D600B9DA8C /* LGSideMenuController.h */,
+				D03AD1B12361B1D600B9DA8C /* LGSideMenuGesturesHandler.h */,
+				D03AD1B22361B1D600B9DA8C /* LGSideMenuBorderView.h */,
+				D03AD1B32361B1D600B9DA8C /* LGSideMenuHelper.m */,
+				D03AD1B42361B1D600B9DA8C /* UIViewController+LGSideMenuController.h */,
+				D03AD1B52361B1D600B9DA8C /* LGSideMenuView.m */,
+				D03AD1B62361B1D600B9DA8C /* LGSideMenuSegue.m */,
+				D03AD1B72361B1D600B9DA8C /* LGSideMenuController.m */,
+				D03AD1B82361B1D600B9DA8C /* LGSideMenuGesturesHandler.m */,
+				D03AD1B92361B1D600B9DA8C /* UIViewController+LGSideMenuController.m */,
+				D03AD1BA2361B1D600B9DA8C /* LGSideMenuHelper.h */,
+				D03AD1BB2361B1D600B9DA8C /* LGSideMenuBorderView.m */,
+			);
+			path = LGSideMenuController;
+			sourceTree = "<group>";
+		};
+		D0471F7F233C95560092E7AC /* TopBar */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAF022B8D07B000B38E3 /* TopBarView.h */,
+				9158BAE722B8D07B000B38E3 /* TopBarView.m */,
+			);
+			path = TopBar;
+			sourceTree = "<group>";
+		};
+		D0471F82233C95750092E7AC /* ControlBar */ = {
+			isa = PBXGroup;
+			children = (
+				9158BAEF22B8D07B000B38E3 /* ControlBar.h */,
+				9158BAF222B8D07B000B38E3 /* ControlBar.m */,
+			);
+			path = ControlBar;
+			sourceTree = "<group>";
+		};
+		D0471F84233C95BF0092E7AC /* InSessionUI */ = {
+			isa = PBXGroup;
+			children = (
+				F0B4386A2787D8B8005CE417 /* Feedback */,
+				F0B438732787D8B8005CE417 /* More */,
+				91F6B5B22784313C00B3C7FF /* Storage */,
+				9191B27D277EE20E00303299 /* LowerThird */,
+				917A235724C049AC009357BB /* SwitchBtn */,
+				D0471F82233C95750092E7AC /* ControlBar */,
+				D0471F7F233C95560092E7AC /* TopBar */,
+				9158BAE822B8D07B000B38E3 /* Chat */,
+				9158BAF322B8D07B000B38E3 /* BottomBar */,
+			);
+			path = InSessionUI;
+			sourceTree = "<group>";
+		};
+		D051F67C2297E19E00C2F214 = {
+			isa = PBXGroup;
+			children = (
+				D0438A7B2313DF16002D7AB7 /* ZoomVideoSDK.xcodeproj */,
+				D051F6872297E19E00C2F214 /* ZoomVideoSample */,
+				D0C8CA8022AFAEF7002A863D /* ZoomVideoSDKScreenShare */,
+				D051F6862297E19E00C2F214 /* Products */,
+				91E531D2229D13D2000D2344 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D051F6862297E19E00C2F214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D051F6852297E19E00C2F214 /* ZoomVideoSample.app */,
+				D0C8CA7D22AFAEF7002A863D /* ZoomVideoSDKScreenShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D051F6872297E19E00C2F214 /* ZoomVideoSample */ = {
+			isa = PBXGroup;
+			children = (
+				D0C8CA7822AFAEA9002A863D /* ZoomVideoSample.entitlements */,
+				919A07C022A7C3CA0064488C /* Vender */,
+				D0471F84233C95BF0092E7AC /* InSessionUI */,
+				9158BB0022B8D08D000B38E3 /* MetalRender */,
+				9158BAA822B7AFE8000B38E3 /* OpenGLRender */,
+				9158BAE522B8D07B000B38E3 /* Canvas */,
+				91300C902431EECB00C25F5C /* ExternalVideoSource */,
+				D0FEB8A1241111D20022FB4B /* PreProcess */,
+				D0A578D22366C14F00F6AA8E /* PreSessionUI */,
+				F09CE7F02952DE6B00C88860 /* VB */,
+				D051F6882297E19E00C2F214 /* AppDelegate.h */,
+				D051F6892297E19E00C2F214 /* AppDelegate.m */,
+				D051F6912297E1A000C2F214 /* Assets.xcassets */,
+				D051F6932297E1A000C2F214 /* LaunchScreen.storyboard */,
+				D051F6962297E1A000C2F214 /* Info.plist */,
+				D051F6972297E1A000C2F214 /* main.m */,
+				D0C4FAA5229BC5490036EC58 /* ZoomVideoSample-Prefix.pch */,
+				D0BDAFB922B2219100950CE8 /* BaseNavigationController.h */,
+				D0BDAFBA22B2219100950CE8 /* BaseNavigationController.m */,
+				918C52C72390ECEC00C35885 /* NSObject+ErrorMessage.h */,
+				918C52C82390ECEC00C35885 /* NSObject+ErrorMessage.m */,
+			);
+			path = ZoomVideoSample;
+			sourceTree = "<group>";
+		};
+		D0946DCC2611C75F00DB5F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0946DD12611C75F00DB5F4B /* ZoomVideoSDK.framework */,
+				D0946DD32611C75F00DB5F4B /* ZoomVideoSDKScreenShare.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0A578D22366C14F00F6AA8E /* PreSessionUI */ = {
+			isa = PBXGroup;
+			children = (
+				D0D175DB2636B3310055C9B1 /* Checkbox */,
+				D02FEFAD22A798D600D41995 /* CreateViewController.h */,
+				D02FEFAE22A798D600D41995 /* CreateViewController.m */,
+				D0E31D74236038BE002CF0B4 /* IntroViewController.h */,
+				D0E31D75236038BE002CF0B4 /* IntroViewController.m */,
+				D03AD1C32361B44900B9DA8C /* MainViewController.h */,
+				D03AD1C42361B44900B9DA8C /* MainViewController.m */,
+				D03AD1C62361B51200B9DA8C /* LeftViewController.h */,
+				D03AD1C72361B51200B9DA8C /* LeftViewController.m */,
+				D03AD1C92361B98600B9DA8C /* LeftViewCell.h */,
+				D03AD1CA2361B98600B9DA8C /* LeftViewCell.m */,
+				D0A578AC2366946300F6AA8E /* SettingTableViewCell.h */,
+				D0A578AD2366946300F6AA8E /* SettingTableViewCell.m */,
+				D02C08CA23681CC000DC531D /* RendererSelectView.h */,
+				D02C08CB23681CC000DC531D /* RendererSelectView.m */,
+				D02C08D023681E3200DC531D /* RendererSelectTableViewCell.h */,
+				D02C08D123681E3200DC531D /* RendererSelectTableViewCell.m */,
+			);
+			path = PreSessionUI;
+			sourceTree = "<group>";
+		};
+		D0C8CA8022AFAEF7002A863D /* ZoomVideoSDKScreenShare */ = {
+			isa = PBXGroup;
+			children = (
+				D0C8CA8E22AFB06A002A863D /* ZoomVideoSDKScreenShare.entitlements */,
+				D0C8CA8122AFAEF7002A863D /* SampleHandler.h */,
+				D0C8CA8222AFAEF7002A863D /* SampleHandler.mm */,
+				D0C8CA8422AFAEF7002A863D /* Info.plist */,
+			);
+			path = ZoomVideoSDKScreenShare;
+			sourceTree = "<group>";
+		};
+		D0D175DB2636B3310055C9B1 /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				D0D175DC2636B3310055C9B1 /* SampleCheckbox.m */,
+				D0D175DD2636B3310055C9B1 /* SampleCheckbox.h */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		D0D549AD24C026FF009CF9BC /* SendYUV */ = {
+			isa = PBXGroup;
+			children = (
+				D0D549B024C02720009CF9BC /* SendYUVAdapter.h */,
+				D0D549B324C02720009CF9BC /* SendYUVAdapter.m */,
+			);
+			path = SendYUV;
+			sourceTree = "<group>";
+		};
+		D0FEB8A1241111D20022FB4B /* PreProcess */ = {
+			isa = PBXGroup;
+			children = (
+				91BFEAB7243C6C10002E320B /* waterMark.png */,
+				D0FEB8A2241111D20022FB4B /* PreProcessHelper.h */,
+				D0FEB8A3241111D20022FB4B /* PreProcessHelper.m */,
+			);
+			name = PreProcess;
+			path = ZoomVideoSample/PreProcess;
+			sourceTree = SOURCE_ROOT;
+		};
+		F09CE7F02952DE6B00C88860 /* VB */ = {
+			isa = PBXGroup;
+			children = (
+				F09CE7F12952DFDC00C88860 /* VBViewController.h */,
+				F09CE7F22952DFDC00C88860 /* VBViewController.m */,
+			);
+			path = VB;
+			sourceTree = "<group>";
+		};
+		F0B4386A2787D8B8005CE417 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				F0B438702787D8B8005CE417 /* FeedbackPopViewController.h */,
+				F0B4386D2787D8B8005CE417 /* FeedbackPopViewController.m */,
+				F0B4386E2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.h */,
+				F0B4386B2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.m */,
+				F0B4386F2787D8B8005CE417 /* FeedbackSurveyResultViewController.h */,
+				F0B4386C2787D8B8005CE417 /* FeedbackSurveyResultViewController.m */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		F0B438732787D8B8005CE417 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				F0B438762787D8B8005CE417 /* MoreMenuHelper.h */,
+				F0B438782787D8B8005CE417 /* MoreMenuHelper.m */,
+				F0B438752787D8B8005CE417 /* MoreMenuItemCell.h */,
+				F0B438792787D8B8005CE417 /* MoreMenuItemCell.m */,
+				F0B438742787D8B8005CE417 /* MoreMenuViewController.h */,
+				F0B438772787D8B8005CE417 /* MoreMenuViewController.m */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D051F6842297E19E00C2F214 /* ZoomVideoSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D051F69B2297E1A000C2F214 /* Build configuration list for PBXNativeTarget "ZoomVideoSample" */;
+			buildPhases = (
+				D051F6812297E19E00C2F214 /* Sources */,
+				D051F6822297E19E00C2F214 /* Frameworks */,
+				D051F6832297E19E00C2F214 /* Resources */,
+				D0A08F7623868E4100640B12 /* Embed App Extensions */,
+				D0FF1407261FF568005600FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A08F7523868E4000640B12 /* PBXTargetDependency */,
+			);
+			name = ZoomVideoSample;
+			productName = ZoomLiteSample;
+			productReference = D051F6852297E19E00C2F214 /* ZoomVideoSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0C8CA7C22AFAEF7002A863D /* ZoomVideoSDKScreenShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C8CA8822AFAEF7002A863D /* Build configuration list for PBXNativeTarget "ZoomVideoSDKScreenShare" */;
+			buildPhases = (
+				D0C8CA7922AFAEF7002A863D /* Sources */,
+				D0C8CA7A22AFAEF7002A863D /* Frameworks */,
+				D0C8CA7B22AFAEF7002A863D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomVideoSDKScreenShare;
+			productName = LiteZoomSDKScreenShare;
+			productReference = D0C8CA7D22AFAEF7002A863D /* ZoomVideoSDKScreenShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D051F67D2297E19E00C2F214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Zoom;
+				TargetAttributes = {
+					D051F6842297E19E00C2F214 = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					D0C8CA7C22AFAEF7002A863D = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D051F6802297E19E00C2F214 /* Build configuration list for PBXProject "ZoomVideoSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D051F67C2297E19E00C2F214;
+			productRefGroup = D051F6862297E19E00C2F214 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D0946DCC2611C75F00DB5F4B /* Products */;
+					ProjectRef = D0438A7B2313DF16002D7AB7 /* ZoomVideoSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D051F6842297E19E00C2F214 /* ZoomVideoSample */,
+				D0C8CA7C22AFAEF7002A863D /* ZoomVideoSDKScreenShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D0946DD12611C75F00DB5F4B /* ZoomVideoSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZoomVideoSDK.framework;
+			remoteRef = D0946DD02611C75F00DB5F4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0946DD32611C75F00DB5F4B /* ZoomVideoSDKScreenShare.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZoomVideoSDKScreenShare.framework;
+			remoteRef = D0946DD22611C75F00DB5F4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D051F6832297E19E00C2F214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0066710243F050C005FF36C /* frame_two.jpg in Resources */,
+				D051F6952297E1A000C2F214 /* LaunchScreen.storyboard in Resources */,
+				D051F6922297E1A000C2F214 /* Assets.xcassets in Resources */,
+				91BFEAB8243C6C10002E320B /* waterMark.png in Resources */,
+				D0066711243F050C005FF36C /* frame_one.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C8CA7B22AFAEF7002A863D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D051F6812297E19E00C2F214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A578AE2366946300F6AA8E /* SettingTableViewCell.m in Sources */,
+				9158BAFB22B8D07B000B38E3 /* ChatView.m in Sources */,
+				F09CE7F32952DFDC00C88860 /* VBViewController.m in Sources */,
+				91300C982431EF2400C25F5C /* SendPictureAdapter.m in Sources */,
+				9158BAFD22B8D07B000B38E3 /* ControlBar.m in Sources */,
+				91F6B5B52784316200B3C7FF /* SimulateStorage.m in Sources */,
+				9191B280277EE2A800303299 /* LowerThirdSettingViewController.m in Sources */,
+				919A07C822A7C3CA0064488C /* KGModal.m in Sources */,
+				9158BAFF22B8D07B000B38E3 /* BottomBarView.m in Sources */,
+				F0B438822787D8B8005CE417 /* MoreMenuItemCell.m in Sources */,
+				F0B4387E2787D8B8005CE417 /* FeedbackSurveyResultViewController.m in Sources */,
+				9158BAFC22B8D07B000B38E3 /* CanvasViewController.m in Sources */,
+				D03AD1C82361B51200B9DA8C /* LeftViewController.m in Sources */,
+				D051F6982297E1A000C2F214 /* main.m in Sources */,
+				9158BAFA22B8D07B000B38E3 /* ChatCell.m in Sources */,
+				F0B4387F2787D8B8005CE417 /* FeedbackPopViewController.m in Sources */,
+				D02C08D223681E3200DC531D /* RendererSelectTableViewCell.m in Sources */,
+				9158BAF822B8D07B000B38E3 /* TopBarView.m in Sources */,
+				F0B438802787D8B8005CE417 /* MoreMenuViewController.m in Sources */,
+				D051F68A2297E19E00C2F214 /* AppDelegate.m in Sources */,
+				9158BB0322B8D0A9000B38E3 /* MetalViewController.m in Sources */,
+				D03AD1BF2361B1D600B9DA8C /* LGSideMenuController.m in Sources */,
+				D03AD1C22361B1D600B9DA8C /* LGSideMenuBorderView.m in Sources */,
+				D0D549B624C02720009CF9BC /* SendYUVAdapter.m in Sources */,
+				9158BB0D22B8F7CB000B38E3 /* shaders.metal in Sources */,
+				91CAF1EB278ED18E009755F3 /* LowerThirdPanel.m in Sources */,
+				D03AD1BC2361B1D600B9DA8C /* LGSideMenuHelper.m in Sources */,
+				D03AD1BD2361B1D600B9DA8C /* LGSideMenuView.m in Sources */,
+				91300C952431EECB00C25F5C /* CameraCaptureAdapter.m in Sources */,
+				D02FEFAF22A798D600D41995 /* CreateViewController.m in Sources */,
+				9158BAC022B7AFE8000B38E3 /* OpenGLViewController.m in Sources */,
+				9158BAFE22B8D07B000B38E3 /* HorizontalTableView.m in Sources */,
+				D0E31D76236038BE002CF0B4 /* IntroViewController.m in Sources */,
+				9158BAC722B7CA4A000B38E3 /* OpenglView.m in Sources */,
+				918C52C92390ECEC00C35885 /* NSObject+ErrorMessage.m in Sources */,
+				D03AD1C52361B44900B9DA8C /* MainViewController.m in Sources */,
+				D03AD1C02361B1D600B9DA8C /* LGSideMenuGesturesHandler.m in Sources */,
+				D03AD1CB2361B98600B9DA8C /* LeftViewCell.m in Sources */,
+				D0FEB8A6241111D20022FB4B /* PreProcessHelper.m in Sources */,
+				D03AD1C12361B1D600B9DA8C /* UIViewController+LGSideMenuController.m in Sources */,
+				9158BB0C22B8F7CB000B38E3 /* MetalView.m in Sources */,
+				D0D175E02636B3310055C9B1 /* SampleCheckbox.m in Sources */,
+				D03AD1BE2361B1D600B9DA8C /* LGSideMenuSegue.m in Sources */,
+				D0BDAFBB22B2219100950CE8 /* BaseNavigationController.m in Sources */,
+				F0B4387D2787D8B8005CE417 /* FeedbackSurveyResultTableViewCell.m in Sources */,
+				917A235F24C04A73009357BB /* SwitchBtn.m in Sources */,
+				919A07C922A7C3CA0064488C /* MBProgressHUD.m in Sources */,
+				D02C08CC23681CC000DC531D /* RendererSelectView.m in Sources */,
+				9158BAF922B8D07B000B38E3 /* ChatInputView.m in Sources */,
+				F0B438812787D8B8005CE417 /* MoreMenuHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C8CA7922AFAEF7002A863D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C8CA8322AFAEF7002A863D /* SampleHandler.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0A08F7523868E4000640B12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C8CA7C22AFAEF7002A863D /* ZoomVideoSDKScreenShare */;
+			targetProxy = D0A08F7423868E4000640B12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D051F6932297E1A000C2F214 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D051F6942297E1A000C2F214 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D051F6992297E1A000C2F214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D051F69A2297E1A000C2F214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D051F69C2297E1A000C2F214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = ZoomVideoSample/ZoomVideoSample.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../lib,
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZoomVideoSample/ZoomVideoSample-Prefix.pch";
+				INFOPLIST_FILE = ZoomVideoSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D051F69D2297E1A000C2F214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = ZoomVideoSample/ZoomVideoSample.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../lib,
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZoomVideoSample/ZoomVideoSample-Prefix.pch";
+				INFOPLIST_FILE = ZoomVideoSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0C8CA8922AFAEF7002A863D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = ZoomVideoSDKScreenShare/ZoomVideoSDKScreenShare.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../lib\"";
+				INFOPLIST_FILE = ZoomVideoSDKScreenShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0C8CA8A22AFAEF7002A863D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = ZoomVideoSDKScreenShare/ZoomVideoSDKScreenShare.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../lib\"";
+				INFOPLIST_FILE = ZoomVideoSDKScreenShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D051F6802297E19E00C2F214 /* Build configuration list for PBXProject "ZoomVideoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D051F6992297E1A000C2F214 /* Debug */,
+				D051F69A2297E1A000C2F214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D051F69B2297E1A000C2F214 /* Build configuration list for PBXNativeTarget "ZoomVideoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D051F69C2297E1A000C2F214 /* Debug */,
+				D051F69D2297E1A000C2F214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C8CA8822AFAEF7002A863D /* Build configuration list for PBXNativeTarget "ZoomVideoSDKScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C8CA8922AFAEF7002A863D /* Debug */,
+				D0C8CA8A22AFAEF7002A863D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D051F67D2297E19E00C2F214 /* Project object */;
+}

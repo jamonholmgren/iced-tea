@@ -1,0 +1,69 @@
+//
+//  ZoomVideoSample-Prefix.pch
+//  ZoomVideoSample
+//
+//  Created by Zoom Video Communications on 2019/5/27.
+//  Copyright © 2019 Zoom. All rights reserved.
+//
+
+#ifndef ZoomVideoSample_Prefix_pch
+#define ZoomVideoSample_Prefix_pch
+
+
+#ifdef __OBJC__
+
+#import <ZoomVideoSDK/ZoomVideoSDK.h>
+#import "MBProgressHUD.h"
+#import "AppDelegate.h"
+#import "NSObject+ErrorMessage.h"
+
+typedef enum : NSUInteger {
+    DisplayMode_LetterBox,
+    DisplayMode_PanAndScan,
+} DisplayMode;
+
+#endif
+
+#define kScreenShareBundleId @"us.zoom.VideoSDKPlaygroud.ExtensionReplayKit"
+
+//for iOS version check
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define IsIphoneX  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125,2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//for device check
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IPHONE_X \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
+#define SAFE_ZOOM_INSETS  34
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define Width(v)                CGRectGetWidth((v).frame)
+#define Height(v)               CGRectGetHeight((v).frame)
+
+#define MinX(v)            CGRectGetMinX((v).frame)
+#define MinY(v)            CGRectGetMinY((v).frame)
+
+#define MidX(v)            CGRectGetMidX((v).frame)
+#define MidY(v)            CGRectGetMidY((v).frame)
+
+#define MaxX(v)            CGRectGetMaxX((v).frame)
+#define MaxY(v)            CGRectGetMaxY((v).frame)
+
+#define RGBCOLOR(r, g, b)   [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define RGBCOLOR_With_Alpha(r, g, b, a)   [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ZoomVideoSample_Prefix_pch */
