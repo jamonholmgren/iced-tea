@@ -1,4 +1,10 @@
-# Steps to repro
+# Repro for react-native-zoom-video-sdk issue
+
+Clone down this repo and run `yarn`,
+`cd ios && arch -x86_64 pod install && cd -`
+then `yarn ios` to see the error.
+
+## Full steps to repro
 
 ```bash
 yarn create expo-app
